@@ -8,3 +8,78 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.container .text {
+  text-align: center;
+}
+
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.character {
+  border: 1px solid #f4f4f4;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  height: 9rem;
+  width: 100%;
+  max-width: 300px;
+  gap: 1rem;
+
+}
+
+.character figure {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem
+}
+
+.character figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #f4f4f4;
+}
+
+.character .details {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.details .name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.character .like-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: auto;
+  cursor: pointer;
+
+}
