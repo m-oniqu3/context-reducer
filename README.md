@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# How to Use useContext + useReducer with TypeScript in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![How to Use useContext + useReducer with TypeScript in React](src/assets/title.png)
 
-Currently, two official plugins are available:
+This React project demonstrates how to build your own state manager using `useContext` and `useReducer` and TypeScript! This app fetches character data from the Rick and Morty API, and allows you to like your favourite characters.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+For a detailed guide on how to use `useContext` and `useReducer` to build your own state manager, check out the full guide. It covers:
 
-## Expanding the ESLint configuration
+- Setting up and creating a context
+- Using a custom hook to access the context
+- Employing useReducer for state management
+- Creating and utilizing a reducer function
+- Defining action types with enums
+- Dispatching actions to update state
+- Utilizing useEffect for data fetching
+- Displaying data in the UI
+- Liking characters
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![How to Use useContext + useReducer with TypeScript in React](src/assets/project-screenshot.png)
